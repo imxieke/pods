@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>蟹壳镜像站</title>
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/png" />
+  <meta name="description" content="蟹壳镜像站，提供各种软件镜像，包括操作系统镜像、包管理工具等下载" />
+  <meta name="keywords" content="蟹壳,蟹壳网,蟹壳镜像站,软件镜像,操作系统镜像,包管理工具" />
+  <meta name="author" content="CloudFlying" />
+</head>
+<style>
+  body {
+    margin: 10px;
+    padding: 0px;
+    background: #fff;
+    color: #000;
+    font-family: Sans-Serif;
+  }
+
+  h1 {
+    padding: 4px;
+    text-align: center;
+    border: 4px double #000;
+    background: #ffd;
+  }
+
+  h2 {
+    padding: 4px;
+    border: 1px solid #888;
+    background: #ffd;
+  }
+
+  table {
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  th {
+    background: #bbd;
+    color: white;
+    padding: 2px;
+  }
+
+  td {
+    padding: 2px;
+    border-bottom: 1px dotted #bbd;
+  }
+
+  img {
+    border: 0;
+    vertical-align: middle;
+  }
+
+  blockquote {
+    font-weight: bold;
+    font-size: 80%;
+  }
+
+  a:hover {
+    background: #ff0;
+  }
+
+  a:hover img {
+    background: #fff;
+  }
+
+  .headtext {
+    color: #889;
+    text-align: center;
+  }
+
+  #directory {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #bandwidth {
+    color: #889;
+    text-align: center;
+    font-size: 75%;
+  }
+
+  .bandwidth {
+    color: #889;
+    text-align: center;
+    font-size: 75%;
+  }
+
+  #news {
+    color: #003;
+  }
+
+  #donors {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #trademark {
+    font-size: 75%;
+    text-align: center;
+  }
+
+  #versions {
+    text-align: center;
+  }
+
+  .kver {
+    text-align: center;
+    color: #004;
+    font-size: 90%;
+  }
+
+  .pvkey {
+    color: #400;
+    font-size: 66%;
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  p.notice {
+    font-size: medium;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div align="center">
+    <img src="/assets/img/mirror.png" width="468" height="141" border="0" alt="pods.xie.ke" />
+    <p>
+      欢迎访问蟹壳镜像站,当前站点包含操作系统软件,系统镜像及其他软件的下载.
+    </p>
+
+    <div align="center">
+      <a name="access" id="access"></a>
+      <table cellpadding="10">
+        <tr>
+          <th>Protocol</th>
+          <th>Location</th>
+        </tr>
+
+        <tr>
+          <td>HTTPS</td>
+          <td>
+            <a href="https://pods.xie.ke">https://pods.xie.ke</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://rsync.samba.org/">RSYNC</a></td>
+          <td>rsync://pods.xie.ke</td>
+        </tr>
+      </table>
+
+      <p><a name="directory" id="directory"></a></p>
+
+      <table cellpadding="10">
+        <tr>
+          <th width="75%">Description</th>
+          <th width="15%">Location</th>
+          <th width="10%">Document</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://almalinux.org/">Alma Linux</a> is an open-source, community-driven Linux operating
+            system that fills the gap left by the <br /> discontinuation of the CentOS
+            Linux stable release.
+          </td>
+          <td>
+            <a href="almalinux/"><tt>almalinux</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.alpinelinux.org/">Alpine Linux</a>, a small
+            distribution frequently used for container images
+          </td>
+          <td>
+            <a href="alpine/"><tt>alpine</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.archlinux.org/">Arch Linux</a>, a simple,
+            lightweight Linux distribution
+          </td>
+          <td>
+            <a href="archlinux/"><tt>archlinux</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://archlinuxarm.org/">Arch Linux ARM</a>
+          </td>
+          <td>
+            <a href="/archlinuxarm/"><tt>archlinuxarm</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://blackarch.org/">BlackArch Linux</a> is a lightweight expansion to Arch Linux for
+            penetration testers.
+          </td>
+          <td>
+            <a href="/blackarch/"><tt>blackarch</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.centos.org/">CentOS</a>, an Enterprise-class
+            Linux Distribution "derived from sources freely provided to the
+            public by <a href="https://www.redhat.com/">Red Hat</a>"
+          </td>
+          <td>
+            <a href="/centos/"><tt>centos</tt></a><br />
+            <a href="/centos-altarch/"><tt>centos-altarch</tt></a><br />
+            <a href="/centos-stream/"><tt>centos-stream</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.cpan.org/">The Comprehensive Perl Archive Network (CPAN)</a>
+          </td>
+          <td>
+            <a href="CPAN/"><tt>CPAN</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            The <a href="https://www.debian.org/">Debian</a> Linux
+            distribution
+          </td>
+          <td>
+            <a href="/debian/"><tt>debian</tt></a><br />
+            <a href="/debiancn/"><tt>debiancn</tt></a><br />
+            <a href="/debian-archive/"><tt>debian-archive</tt></a><br />
+            <a href="/debian-backports/"><tt>debian-backports</tt></a><br />
+            <a href="/debian-cd/"><tt>debian-cd</tt></a><br />
+            <a href="/debian-cd-archive/"><tt>debian-cd-archive</tt></a><br />
+            <a href="/debian-cloud-images/"><tt>debian-cloud-images</tt></a><br />
+            <a href="/debian-multimedia/"><tt>debian-multimedia</tt></a><br />
+            <a href="/debian-ports/"><tt>debian-ports</tt></a><br />
+            <a href="/debian-security/"><tt>debian-security</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.deepin.org/">Deepin</a>, a distribution
+            aiming to provide an elegant desktop
+          </td>
+          <td>
+            <a href="/deepin/"><tt>deepin</tt></a><br />
+            <a href="/deepin-cd/"><tt>deepin-cd</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.devuan.org/">Devuan</a> fork of Debian without systemd
+          </td>
+          <td>
+            <a href="/devuan/"><tt>devuan</tt></a><br />
+            <a href="/devuan-cd/"><tt>devuan-cd</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.dragonflybsd.org/">DragonFly BSD</a> is a free and open-source Unix-like operating
+            system
+            forked from FreeBSD 4.8.
+          </td>
+          <td>
+            <a href="/dragonflybsd-dports/"><tt>dragonflybsd-dports</tt></a><br />
+            <a href="/dragonflybsd-snapshots/"><tt>dragonflybsd-snapshots</tt></a><br />
+            <a href="/dragonflybsd-images/"><tt>dragonflybsd-images</tt></a><br />
+            <a href="/dragonflybsd-older-images/"><tt>dragonflybsd-older-images</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://fedoraproject.org">Fedora</a>, Red Hat's
+            "Community Project" Linux distribution
+          </td>
+          <td>
+            <a href="/fedora/"><tt>fedora</tt></a><br />
+            <a href="/fedora-altarch/"><tt>fedora-altarch</tt></a><br />
+            <a href="/fedora-epel/"><tt>fedora-epel</tt></a><br />
+            <a href="/fedora-secondary/"><tt>fedora-secondary</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.freebsd.org/">FreeBSD</a> is a free-software Unix-like operating system descended from
+            the Berkeley Software Distribution (BSD).
+          </td>
+          <td>
+            <a href="/freebsd/"><tt>freebsd</tt></a><br />
+            <a href="/freebsd-pkg/"><tt>freebsd-pkg</tt></a><br />
+            <a href="/freebsd-ports/"><tt>freebsd-ports</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.gentoo.org">Gentoo Linux</a> ,a flexible Linux distribution.</td>
+          <td>
+            <a href="/gentoo/"><tt>gentoo</tt></a><br />
+            <a href="/gentoo-distfiles/"><tt>gentoo-distfiles</tt></a><br />
+            <a href="/gentoo-portage/"><tt>gentoo-portage</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.gnu.org/">The Free Software Foundation (The GNU Project)</a>
+          </td>
+          <td>
+            <a href="/gnu/"><tt>gnu</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.gnu.org/">Kali Linux</a>
+            Penetration Testing and Ethical Hacking Linux Distribution.
+          </td>
+          <td>
+            <a href="/kali/"><tt>kali</tt></a><br />
+            <a href="/kali-cdimage/"><tt>kali-cdimage</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.linuxmint.com">Linux Mint</a> is an operating system for desktop and laptop
+            computers.
+          </td>
+          <td>
+            <a href="/linuxmint/"><tt>linuxmint</tt></a><br />
+            <a href="/linuxmint-images/"><tt>linuxmint-images</tt></a><br />
+            <a href="/linuxmint-packages/"><tt>linuxmint-packages</tt></a><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.mageia.org/">Mageia</a> Project</td>
+          <td>
+            <a href="/mageia/"><tt>mageia</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.netbsd.org/">NetBSD</a> is a free, fast, secure, and highly portable Unix-like Open
+            Source operating system.</td>
+          <td>
+            <a href="/netbsd/"><tt>netbsd</tt></a><br>
+            <a href="/netbsd-pkgsrc/"><tt>netbsd-pkgsrc</tt></a><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.openbsd.org/">OpenBSD</a> is a FREE, multi-platform 4.4BSD-based UNIX-like operating
+            system.</td>
+          <td>
+            <a href="/openbsd/"><tt>openbsd</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.opensuse.org/">openSUSE</a> Project</td>
+          <td>
+            <a href="/opensuse/"><tt>opensuse</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.oracle.com/linux">Oracle Linux</a>, a
+            repackaged distribution based on RHEL (ISOs only)
+          </td>
+          <td>
+            <a href="oracle/"><tt>oracle</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.qubes-os.org/">Qubes OS Project</a>, an OS
+            designed to provide strong workstation security via
+            compartmentalization
+          </td>
+          <td>
+            <a href="qubes/"><tt>qubes</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.sourceware.org/">Sourceware</a>, an
+            archive of various free software, mostly development tools
+          </td>
+          <td>
+            <a href="/sourceware/"><tt>sourceware</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.slackware.com/">Slackware Linux</a> "Unix-like" Linux distribution.</td>
+          <td>
+            <a href="/slackware/"><tt>slackware</tt></a><br>
+            <a href="/slackware-iso/"><tt>slackware-iso</tt></a><br>
+          </td>
+          <td>
+            <a href="/docs/slackware/"><tt>help</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://tails.boum.org/">Tails</a>, a live distribution
+            aiming to preserve your privacy and anonimity
+          </td>
+          <td>
+            <a href="tails/"><tt>tails</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://www.ubuntu.com/">Ubuntu</a>, a Linux distribution
+            from <a href="https://www.canonical.com/">Canonical</a>
+          </td>
+          <td>
+            <a href="/ubuntu/"><tt>ubuntu</tt></a>
+            <br />
+            <a href="/ubuntu-cdimage/"><tt>ubuntu-cdimage</tt></a>
+            <br />
+            <a href="/ubuntu-cloud-images/"><tt>ubuntu-cloud-images</tt></a>
+            <br />
+            <a href="/ubuntu-ports/"><tt>ubuntu-ports</tt></a>
+            <br />
+            <a href="/ubuntu-ports-releases/"><tt>ubuntu-ports-releases</tt></a>
+            <br />
+            <a href="/ubuntu-releases/"><tt>ubuntu-releases</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="https://voidlinux.org/">Void Linux</a> is a general purpose operating system, based on
+            the monolithic Linux kernel.
+          </td>
+          <td>
+            <a href="voidlinux/"><tt>voidlinux</tt></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            The
+            <a href="https://www.linuxfoundation.org/">Linux Foundation</a>
+            <a href="https://www.yoctoproject.org/">Yocto Project</a>, a deeply embeddable Linux distribution
+          </td>
+          <td>
+            <a href="yocto/"><tt>yocto</tt></a>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+      <p class="notice">
+        The content comes from the original website and is mirrored by an automated program. The software Mirrors
+        provides
+        this
+        service but is not responsible for the content.
+      </p>
+    </div>
+
+    <!-- <p class="notice">
+        This site is operated by the Zeus Team, Inc., a
+        <a href="https://www.kernel.org/nonprofit.html"
+          >501(c)3 nonprofit corporation</a
+        >, with support from the following sponsors.
+      </p> -->
+
+    <!--<a name="sponsors"></a> <a name="donors"></a>-->
+
+    <!--<div align="center">-->
+    <!--  <p id="donors">-->
+    <!--    <a href="https://www.isc.org/"-->
+    <!--      ><img-->
+    <!--        src="/images/hostedatisc.png"-->
+    <!--        width="84"-->
+    <!--        height="41"-->
+    <!--        alt="Internet Systems Consortium" /></a-->
+    <!--    >&nbsp;-->
+    <!--    <a href="https://www.linuxfoundation.org/"-->
+    <!--      ><img-->
+    <!--        src="/images/lflogo-med.png"-->
+    <!--        alt="The Linux Foundation"-->
+    <!--        width="108"-->
+    <!--        height="33" /></a-->
+    <!--    >&nbsp;-->
+    <!--    <a href="https://www.redhat.com/"-->
+    <!--      ><img-->
+    <!--        src="/images/redhat-logo.png"-->
+    <!--        width="103"-->
+    <!--        height="33"-->
+    <!--        alt="Red Hat, Inc." /></a-->
+    <!--    ><br />-->
+    <!--    <a href="https://metal.equinix.com/"-->
+    <!--      ><img-->
+    <!--        src="/images/equinix-metal.png"-->
+    <!--        width="328"-->
+    <!--        height="35"-->
+    <!--        alt="Equinix Metal"-->
+    <!--    /></a>-->
+    <!--  </p>-->
+    <!--</div>-->
+  </div>
+</body>
+
+</html>
